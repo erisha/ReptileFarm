@@ -1,2 +1,2 @@
 # ReptileFarm
-Single Resource API App. 
+Single Resource API. 
