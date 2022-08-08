@@ -2,7 +2,7 @@
 const mongoose = require('mongoose')
 
 // snack is a subdocument NOT A MODEL
-// snack will be part of the snacks array added to specific pets
+// snack will be part of the snacks array added to specific reptiles
 
 // we dont, DO NOT, need to get the model from mongoose, so we're going to save a lil real estate in our file and skip destructuring, in favor of the regular syntax
 const snackSchema = new mongoose.Schema({
