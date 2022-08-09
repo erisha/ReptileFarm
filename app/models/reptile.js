@@ -17,11 +17,11 @@ const reptileSchema = new Schema(
             type: String,
             required: true
         },
-        age: {
-            type: Number,
+        color: {
+            type: String,
             required: true
         },
-        adoptable: {
+        beginnerFriendly: {
             type: Boolean,
             required: true
         },
@@ -46,14 +46,14 @@ reptileSchema.virtual('fullTitle').get(function () {
     return `${this.name} the ${this.type}`
 })
 
-reptileSchema.virtual('isABaby').get(function () {
-    if (this.age < 5) {
-        return "yeah, they're just a baby"
-    } else if (this.age >= 5 && this.age < 10) {
-        return "not really a baby, but still a baby"
-    } else {
-        return "a good old reptile(definitely still a baby)"
-    }
-})
+// reptileSchema.virtual('isABaby').get(function () {
+//     if (this.age < 5) {
+//         return "yeah, they're just a baby"
+//     } else if (this.age >= 5 && this.age < 10) {
+//         return "not really a baby, but still a baby"
+//     } else {
+//         return "a good old reptile(definitely still a baby)"
+//     }
+// })
 
 module.exports = model('Reptile', reptileSchema)
