@@ -56,4 +56,4 @@ reptileSchema.virtual('isABaby').get(function () {
     }
 })
 
-module.exports = model('Reptile', ReptileSchema)
+module.exports = model('Reptile', reptileSchema)
